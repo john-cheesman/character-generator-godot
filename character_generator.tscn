@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://character_generator.gd" type="Script" id=1]
+[ext_resource path="res://character.tscn" type="PackedScene" id=2]
+
+[node name="character_generator" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="character" parent="." instance=ExtResource( 2 )]
+position = Vector2( 213, 295 )
+scale = Vector2( 10, 10 )
+
+[node name="random" type="Button" parent="."]
+margin_left = 744.0
+margin_top = 276.0
+margin_right = 756.0
+margin_bottom = 296.0
+text = "Random"
+flat = true
+
